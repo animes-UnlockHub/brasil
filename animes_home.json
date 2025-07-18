@@ -1,0 +1,95 @@
+[
+  {
+    "titulo": "Naruto Shippuden",
+    "capa": "https://i.pinimg.com/originals/5b/aa/7c/5baa7c7f397b5a9877c113cfddf84d01.jpg",
+    "linguagem": "dublado",
+    "status": "completo",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Shounen",
+      "Ninjas"
+    ],
+    "descricao": "Naruto retorna à vila após dois anos de treinamento com Jiraiya, determinado a salvar seu amigo Sasuke e proteger Konoha das ameaças da Akatsuki.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/n/naruto-shippuden-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/n/naruto-shippuden-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/n/naruto-shippuden-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/n/naruto-shippuden-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/n/naruto-shippuden-dublado/05.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Solo Leveling",
+    "capa": "https://i.pinimg.com/originals/cb/cd/49/cbcd49ba74b42887738fc85536d2ee56.jpg",
+    "linguagem": "legendado",
+    "status": "em andamento",
+    "generos": [
+      "Ação",
+      "Fantasia",
+      "Shounen"
+    ],
+    "descricao": "Sung Jin-Woo, o caçador mais fraco de todos, encontra um sistema que o transforma em uma existência imensamente poderosa dentro de dungeons perigosas.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/08.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "One Piece",
+    "capa": "https://i.pinimg.com/originals/d9/3a/07/d93a071cbe3f6a65b95bdecc0d71e880.jpg",
+    "linguagem": "dublado",
+    "status": "em andamento",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Shounen",
+      "Fantasia"
+    ],
+    "descricao": "Monkey D. Luffy e sua tripulação navegam pelos mares em busca do lendário tesouro One Piece, enfrentando inimigos poderosos e desvendando mistérios.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-dublado/05.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Black Clover",
+    "capa": "https://i.pinimg.com/originals/94/56/25/945625d5fdd0e6b34cbd9a8b2a6fa70d.jpg",
+    "linguagem": "dublado",
+    "status": "completo",
+    "generos": [
+      "Ação",
+      "Fantasia",
+      "Shounen",
+      "Magia"
+    ],
+    "descricao": "Em um mundo onde a magia é tudo, Asta, um garoto sem magia, sonha em se tornar o Rei Mago. Com esforço e determinação, ele enfrenta desafios incríveis.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/08.mp4/index.m3u8"
+      ]
+    }
+  }
+]
