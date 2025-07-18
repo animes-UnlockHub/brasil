@@ -1,0 +1,372 @@
+[
+  {
+    "titulo": "Fire Force",
+    "capa": "https://i.pinimg.com/736x/3d/cc/92/3dcc922e4572551a846c4a9323b006fb.jpg",
+    "linguagem": "legendado",
+    "status": "em andamento",
+    "generos": [
+      "Ação",
+      "Sobrenatural",
+      "Shounen"
+    ],
+    "descricao": "Shinra, um jovem com poderes de fogo, entra para uma brigada especial que combate criaturas chamadas Infernais, enquanto busca a verdade sobre seu passado.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/08.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/09.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/10.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/11.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/12.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/13.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/14.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/15.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/16.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/17.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/18.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/19.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/20.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/21.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/22.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/23.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-dublado/24.mp4/index.m3u8"
+      ],
+      "segunda": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/08.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/09.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/10.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/11.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/12.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/13.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/14.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/15.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/16.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/17.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/18.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/19.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/20.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/21.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/22.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/23.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/e/enen-no-shoubotai-2-dublado/24.mp4/index.m3u8"
+      ],
+      "terceira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/08.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/09.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/10.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/11.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/f/fire-force-3/12.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Dandadan",
+    "capa": "https://i.pinimg.com/736x/04/28/49/042849c7e4ee709ea46f44e5c1fe8b39.jpg",
+    "linguagem": "dublado",
+    "status": "em andamento",
+    "generos": [
+      "Ação",
+      "Comédia",
+      "Sobrenatural",
+      "Sci-fi",
+      "Ecchi"
+    ],
+    "descricao": "Momo e Okarun mergulham em um mundo bizarro repleto de alienígenas e fantasmas, misturando pancadaria e maluquice com toques de romance e mistério.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/08.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/09.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/10.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/11.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-dublado/12.mp4/index.m3u8"
+      ],
+      "segunda": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/d/dandadan-2-dublado/02.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Gachiakuta",
+    "capa": "https://i.pinimg.com/736x/d0/eb/bf/d0ebbff616b402c14a0d8023183de974.jpg",
+    "linguagem": "dublado",
+    "status": "em andamento",
+    "generos": [
+      "Ação",
+      "Drama",
+      "Fantasia",
+      "Shounen"
+    ],
+    "descricao": "Rudo é jogado em um mundo feito de lixo após ser acusado injustamente. Lá, descobre novos poderes e enfrenta monstros enquanto busca justiça.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/g/gachiakuta-dublado/02.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Sakamoto Days",
+    "capa": "https://i.pinimg.com/736x/d0/eb/bf/d0ebbff616b402c14a0d8023183de974.jpg",
+    "linguagem": "dublado",
+    "status": "em andamento",
+    "generos": [
+      "Ação",
+      "Comédia",
+      "Slice of Life",
+      "Shounen"
+    ],
+    "descricao": "Um ex-assassino lendário tenta levar uma vida tranquila como dono de loja, mas antigos inimigos não o deixam em paz — mistura perfeita de ação e humor.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/08.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/09.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/10.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-dublado/11.mp4/index.m3u8"
+      ],
+      "segunda": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-2-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sakamoto-days-2-dublado/02.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Kimetsu no Yaiba: Hashira Training Arc",
+    "capa": "https://cdn.myanimelist.net/images/anime/1818/139511l.jpg",
+    "linguagem": "legendado",
+    "status": "completo",
+    "generos": [
+      "Ação",
+      "Shounen",
+      "Sobrenatural"
+    ],
+    "descricao": "O arco de treinamento dos Hashira mostra Tanjiro e seus aliados se preparando para a grande batalha contra Muzan, com animação impecável e momentos emocionantes.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimetsu-no-yaiba-hashira-geiko-hen-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimetsu-no-yaiba-hashira-geiko-hen-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimetsu-no-yaiba-hashira-geiko-hen-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimetsu-no-yaiba-hashira-geiko-hen-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimetsu-no-yaiba-hashira-geiko-hen-dublado/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimetsu-no-yaiba-hashira-geiko-hen-dublado/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimetsu-no-yaiba-hashira-geiko-hen-dublado/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/k/kimetsu-no-yaiba-hashira-geiko-hen-dublado/08.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Oshi no Ko – 2ª Temporada",
+    "capa": "https://cdn.myanimelist.net/images/anime/1589/137014l.jpg",
+    "linguagem": "legendado",
+    "status": "em andamento",
+    "generos": [
+      "Drama",
+      "Mistério",
+      "Música",
+      "Seinen"
+    ],
+    "descricao": "Aqua mergulha mais fundo no mundo dos ídolos em busca de vingança, enquanto Ruby segue seu caminho para brilhar sob os holofotes. Intenso e envolvente.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/08.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/09.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/10.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko/11.mp4/index.m3u8"
+      ],
+      "segunda": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/08.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/09.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/10.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/11.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/12.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/oshi-no-ko-2/13.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Sousou no Frieren",
+    "capa": "https://cdn.myanimelist.net/images/anime/1015/138006l.jpg",
+    "linguagem": "legendado",
+    "status": "completo",
+    "generos": [
+      "Fantasia",
+      "Drama",
+      "Aventura",
+      "Slice of Life"
+    ],
+    "descricao": "Frieren continua sua jornada após a morte do herói Himmel, encontrando novos desafios e refletindo sobre o valor do tempo e da amizade.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/08.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/09.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/10.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/11.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/12.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/13.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/14.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/15.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/16.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/17.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/18.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/19.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/20.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/21.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/22.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/23.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/24.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/25.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/26.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/27.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/sousou-no-frieren-dublado/28.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Naruto Shippuden",
+    "capa": "https://i.pinimg.com/originals/5b/aa/7c/5baa7c7f397b5a9877c113cfddf84d01.jpg",
+    "linguagem": "dublado",
+    "status": "completo",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Shounen",
+      "Ninjas"
+    ],
+    "descricao": "Naruto retorna à vila após dois anos de treinamento com Jiraiya, determinado a salvar seu amigo Sasuke e proteger Konoha das ameaças da Akatsuki.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/n/naruto-shippuden-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/n/naruto-shippuden-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/n/naruto-shippuden-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/n/naruto-shippuden-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/n/naruto-shippuden-dublado/05.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Solo Leveling",
+    "capa": "https://i.pinimg.com/originals/cb/cd/49/cbcd49ba74b42887738fc85536d2ee56.jpg",
+    "linguagem": "legendado",
+    "status": "em andamento",
+    "generos": [
+      "Ação",
+      "Fantasia",
+      "Shounen"
+    ],
+    "descricao": "Sung Jin-Woo, o caçador mais fraco de todos, encontra um sistema que o transforma em uma existência imensamente poderosa dentro de dungeons perigosas.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/s/solo-leveling/08.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "One Piece",
+    "capa": "https://i.pinimg.com/originals/d9/3a/07/d93a071cbe3f6a65b95bdecc0d71e880.jpg",
+    "linguagem": "dublado",
+    "status": "em andamento",
+    "generos": [
+      "Ação",
+      "Aventura",
+      "Shounen",
+      "Fantasia"
+    ],
+    "descricao": "Monkey D. Luffy e sua tripulação navegam pelos mares em busca do lendário tesouro One Piece, enfrentando inimigos poderosos e desvendando mistérios.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/o/one-piece-dublado/05.mp4/index.m3u8"
+      ]
+    }
+  },
+  {
+    "titulo": "Black Clover",
+    "capa": "https://i.pinimg.com/originals/94/56/25/945625d5fdd0e6b34cbd9a8b2a6fa70d.jpg",
+    "linguagem": "dublado",
+    "status": "completo",
+    "generos": [
+      "Ação",
+      "Fantasia",
+      "Shounen",
+      "Magia"
+    ],
+    "descricao": "Em um mundo onde a magia é tudo, Asta, um garoto sem magia, sonha em se tornar o Rei Mago. Com esforço e determinação, ele enfrenta desafios incríveis.",
+    "temporadas": {
+      "primeira": [
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/01.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/02.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/03.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/04.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/05.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/06.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/07.mp4/index.m3u8",
+        "https://cdn-s01.mywallpaper-4k-image.net/stream/b/black-clover-dublado/08.mp4/index.m3u8"
+      ]
+    }
+  }
+]
