@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>FDS Brasil - Streaming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      /* Dark blue theme colors */
+      --dark-bg: #0f172a;
+      --darker-bg: #020617;
+      --card-bg: #1e293b;
+      --card-hover: #334155;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --accent-glow: #60a5fa;
+      --light-text: #f1f5f9;
+      --muted-text: #64748b;
+      --border-color: #475569;
+      --glass-bg: rgba(30, 41, 59, 0.8);
+      --glass-border: rgba(71, 85, 105, 0.3);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--dark-bg);
+      color: white;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    header {
+      backdrop-filter: blur(20px);
+      background: rgba(15, 23, 42, 0.85);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--border-color);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.6em;
+      color: var(--accent);
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: var(--card-bg);
+      border-radius: 25px;
+      padding: 8px 16px;
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+    }
+
+    .search-box:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+
+    .search-box input {
+      background: none;
+      border: none;
+      color: white;
+      outline: none;
+      margin-left: 8px;
+      font-size: 14px;
+      width: 200px;
+    }
+
+    .search-box i {
+      color: var(--muted-text);
+    }
+
+    .menu-toggle {
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 21;
+      padding: 8px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .menu-toggle:hover {
+      background: var(--card-bg);
+    }
+
+    /* Drawer aprimorado com tema azul */
+    .drawer {
+      position: fixed;
+      top: 0;
+      left: -280px;
+      width: 280px;
+      height: 100%;
+      background: rgba(2, 6, 23, 0.98);
+      backdrop-filter: blur(20px);
+      transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 30;
+      padding: 24px;
+      border-right: 1px solid var(--border-color);
+      box-shadow: 4px 0 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .drawer.open {
+      left: 0;
+    }
+
+    .drawer-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 25;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .drawer-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .drawer .profile {
+      text-align: center;
+      margin-bottom: 32px;
+      padding: 20px;
+      background: linear-gradient(135deg, var(--card-bg), var(--darker-bg));
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+    }
+
+    .drawer .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      margin-bottom: 12px;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    }
+
+    .drawer .profile h3 {
+      font-size: 1.1em;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .drawer .profile small {
+      font-size: 0.85em;
+      color: var(--muted-text);
+      font-weight: 400;
+    }
+
+    .drawer nav a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--light-text);
+      text-decoration: none;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      border: 1px solid transparent;
+    }
+
+    .drawer nav a:hover {
+      background: linear-gradient(135deg, var(--card-hover), var(--card-bg));
+      border-color: var(--border-color);
+      transform: translateX(4px);
+    }
+
+    .drawer nav a i {
+      width: 20px;
+      text-align: center;
+      color: var(--accent);
+    }
+
+    /* Hero section com tema azul */
+    .destaque {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      padding: 32px 24px;
+      min-height: 500px;
+      display: flex;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--border-color);
+      overflow: hidden;
+    }
+
+    .destaque::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        45deg, 
+        rgba(15, 23, 42, 0.8) 0%, 
+        rgba(15, 23, 42, 0.4) 50%, 
+        rgba(15, 23, 42, 0.8) 100%
+      );
+      z-index: 0;
+    }
+
+    .destaque::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, var(--dark-bg) 5%, transparent 60%);
+      z-index: 1;
+    }
+
+    .destaque-content {
+      position: relative;
+      display: flex;
+      z-index: 2;
+      gap: 24px;
+      align-items: flex-end;
+    }
+
+    .destaque-thumb {
+      width: 140px;
+      height: 200px;
+      border-radius: 16px;
+      object-fit: cover;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+      border: 2px solid rgba(59, 130, 246, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .destaque-thumb:hover {
+      transform: scale(1.05);
+    }
+
+    .destaque-info {
+      flex: 1;
+    }
+
+    .destaque-info .greeting {
+      font-size: 0.9em;
+      margin-bottom: 4px;
+      color: #cbd5e1;
+      font-weight: 400;
+    }
+
+    .destaque-info .subtitle {
+      font-size: 0.95em;
+      color: var(--accent);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .destaque-info h2 {
+      font-size: 2em;
+      margin-bottom: 12px;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      line-height: 1.2;
+    }
+
+    .destaque-info p {
+      font-size: 0.95em;
+      color: #cbd5e1;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      max-width: 500px;
+    }
+
+    .destaque-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .destaque-buttons button {
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .destaque-buttons button:first-child {
+      background: linear-gradient(135deg, var(--accent), var(--accent-glow));
+      color: white;
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .destaque-buttons button:first-child:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+    }
+
+    .destaque-buttons button:last-child {
+      background: var(--glass-bg);
+      backdrop-filter: blur(10px);
+      border: 2px solid var(--glass-border);
+      color: #fff;
+    }
+
+    .destaque-buttons button:last-child:hover {
+      background: rgba(51, 65, 85, 0.8);
+      transform: translateY(-2px);
+    }
+
+    /* Seções de conteúdo */
+    .section-title {
+      font-size: 1.4em;
+      margin: 32px 24px 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-title::before {
+      content: '';
+      width: 4px;
+      height: 24px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .scroll-row {
+      display: flex;
+      overflow-x: auto;
+      padding: 0 24px 24px;
+      gap: 16px;
+      scroll-behavior: smooth;
+    }
+
+    .scroll-row::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .scroll-row::-webkit-scrollbar-track {
+      background: var(--card-bg);
+      border-radius: 3px;
+    }
+
+    .scroll-row::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 3px;
+    }
+
+    /* Cards aprimorados */
+    .item-card {
+      flex: 0 0 auto;
+      width: 130px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .item-card:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+      border-color: var(--accent);
+    }
+
+    .item-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .item-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .item-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(15,23,42,0.8) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .item-card:hover::after {
+      opacity: 1;
+    }
+
+    /* Seção de episódios */
+    .episodes-section {
+      padding: 30px 24px;
+      background: var(--darker-bg);
+    }
+
+    .episodes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .episode-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      transition: all 0.4s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .episode-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+      border-color: var(--accent);
+    }
+
+    .episode-thumbnail {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .episode-thumbnail::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg, rgba(15,23,42,0.3), transparent);
+    }
+
+    .play-overlay {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: rgba(59, 130, 246, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      z-index: 2;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.3s ease;
+    }
+
+    .episode-card:hover .play-overlay {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .episode-info {
+      padding: 20px;
+    }
+
+    .episode-title {
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--light-text);
+      line-height: 1.3;
+    }
+
+    .episode-subtitle {
+      font-size: 0.9em;
+      color: var(--muted-text);
+      margin-bottom: 12px;
+    }
+
+    .episode-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8em;
+      color: var(--muted-text);
+    }
+
+    .episode-duration {
+      background: var(--darker-bg);
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .search-box {
+        display: none;
+      }
+      
+      .destaque-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .destaque-thumb {
+        width: 120px;
+        height: 160px;
+      }
+      
+      .destaque-info h2 {
+        font-size: 1.6em;
+      }
+      
+      .section-title {
+        font-size: 1.2em;
+        margin: 24px 16px 12px;
+      }
+      
+      .scroll-row {
+        padding: 0 16px 16px;
+        gap: 12px;
+      }
+      
+      .item-card {
+        width: 110px;
+      }
+      
+      .item-card img {
+        height: 150px;
+      }
+      
+      .episodes-grid {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+      }
+    }
+
+    /* Animações */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    /* Loading skeleton */
+    .skeleton {
+      background: linear-gradient(90deg, var(--card-bg) 25%, var(--card-hover) 50%, var(--card-bg) 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+    }
+
+    @keyframes loading {
+      0% {
+        background-position: 200% 0;
+      }
+      100% {
+        background-position: -200% 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Overlay do drawer -->
+  <div class="drawer-overlay" id="drawer-overlay" onclick="toggleDrawer()"></div>
+
+  <!-- MENU LATERAL -->
+  <div class="drawer" id="drawer">
+    <div class="profile">
+      <img src="https://i.pinimg.com/736x/bf/61/35/bf6135da514102f7afe1005242ce76bd.jpg" alt="Avatar do Criador">
+      <h3>Canal FDS-KKKK</h3>
+      <small>@leuegay</small>
+    </div>
+    <nav>
+      <a href="#"><i class="fas fa-globe"></i> Dublado</a>
+      <a href="#"><i class="fas fa-closed-captioning"></i> Legendado</a>
+      <a href="#"><i class="fas fa-fire"></i> Lançamentos</a>
+      <a href="#"><i class="fas fa-star"></i> Favoritos</a>
+      <a href="#"><i class="fas fa-clock"></i> Assistir depois</a>
+      <a href="#"><i class="fas fa-cog"></i> Configurações</a>
+    </nav>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">FDS BRASIL</div>
+    <div class="header-controls">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Buscar animes, filmes...">
+      </div>
+      <div class="menu-toggle" onclick="toggleDrawer()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- DESTAQUE -->
+  <section class="destaque" id="destaque">
+    <div class="destaque-content fade-in">
+      <div class="destaque-info">
+        <div class="greeting">Olá <b>Usuário</b></div>
+        <p class="subtitle">Bem-vindo ao FDS Brasil</p>
+        <h2>Carregando conteúdo...</h2>
+        <p>Estamos buscando o melhor conteúdo para você assistir.</p>
+        <div class="destaque-buttons">
+          <button><i class="fas fa-play"></i> Assistir</button>
+          <button><i class="fas fa-plus"></i> Minha Lista</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h3 class="section-title">
+    <i class="fas fa-film"></i>
+    Últimos Filmes
+  </h3>
+  <div class="scroll-row" id="ultimos-filmes">
+    <!-- Loading skeletons -->
+    <div class="item-card skeleton" style="width: 130px; height: 180px;"></div>
+    <div class="item-card skeleton" style="width: 130px; height: 180px;"></div>
+    <div class="item-card skeleton" style="width: 130px; height: 180px;"></div>
+    <div class="item-card skeleton" style="width: 130px; height: 180px;"></div>
+    <div class="item-card skeleton" style="width: 130px; height: 180px;"></div>
+  </div>
+
+  <h3 class="section-title">
+    <i class="fas fa-tv"></i>
+    Últimas Séries
+  </h3>
+  <div class="scroll-row" id="ultimas-series">
+    <!-- Loading skeletons -->
+    <div class="item-card skeleton" style="width: 130px; height: 180px;"></div>
+    <div class="item-card skeleton" style="width: 130px; height: 180px;"></div>
+    <div class="item-card skeleton" style="width: 130px; height: 180px;"></div>
+    <div class="item-card skeleton" style="width: 130px; height: 180px;"></div>
+    <div class="item-card skeleton" style="width: 130px; height: 180px;"></div>
+  </div>
+
+  <!-- SEÇÃO DE EPISÓDIOS -->
+  <section class="episodes-section">
+    <h3 class="section-title">
+      <i class="fas fa-play-circle"></i>
+      Episódios Recentes
+    </h3>
+    <div class="episodes-grid" id="episodes-grid">
+      <!-- Loading skeletons -->
+      <div class="episode-card skeleton" style="height: 280px;"></div>
+      <div class="episode-card skeleton" style="height: 280px;"></div>
+      <div class="episode-card skeleton" style="height: 280px;"></div>
+      <div class="episode-card skeleton" style="height: 280px;"></div>
+      <div class="episode-card skeleton" style="height: 280px;"></div>
+      <div class="episode-card skeleton" style="height: 280px;"></div>
+    </div>
+  </section>
+
+  <script>
+    function toggleDrawer() {
+      const drawer = document.getElementById("drawer");
+      const overlay = document.getElementById("drawer-overlay");
+      
+      drawer.classList.toggle("open");
+      overlay.classList.toggle("active");
+    }
+
+    // Fechar drawer ao clicar em link
+    document.querySelectorAll('.drawer nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggleDrawer();
+      });
+    });
+
+    async function carregarConteudo() {
+      try {
+        console.log('Carregando conteúdo da API...');
+        const res = await fetch("https://api.jikan.moe/v4/anime?start_date=2024-01-01&limit=25&sfw=true&order_by=popularity");
+        const data = await res.json();
+        const lista = data.data;
+
+        if (!lista || lista.length === 0) {
+          throw new Error('Nenhum dado recebido da API');
+        }
+
+        const destaque = lista[0];
+        const filmes = lista.slice(1, 8);
+        const series = lista.slice(8, 15);
+        const episodes = lista.slice(15, 21);
+
+        // Destaque
+        const destaqueEl = document.getElementById("destaque");
+        destaqueEl.style.backgroundImage = `url(${destaque.images.jpg.large_image_url})`;
+        destaqueEl.innerHTML = `
+          <div class="destaque-content fade-in">
+            <img class="destaque-thumb" src="${destaque.images.jpg.image_url}" alt="${destaque.title}">
+            <div class="destaque-info">
+              <div class="greeting">Olá <b>Usuário</b></div>
+              <p class="subtitle">Aproveite seu anime favorito</p>
+              <h2>${destaque.title}</h2>
+              <p>${(destaque.synopsis?.substring(0, 140) || 'Anime popular da temporada atual com ótimas avaliações.')}</p>
+              <div class="destaque-buttons">
+                <button><i class="fas fa-play"></i> Assistir</button>
+                <button><i class="fas fa-plus"></i> Minha Lista</button>
+              </div>
+            </div>
+          </div>
+        `;
+
+        // Filmes
+        const filmesContainer = document.getElementById("ultimos-filmes");
+        filmesContainer.innerHTML = '';
+        filmes.forEach((anime, index) => {
+          const card = document.createElement('div');
+          card.className = 'item-card fade-in';
+          card.style.animationDelay = `${index * 0.1}s`;
+          card.innerHTML = `
+            <img src="${anime.images.jpg.image_url}" alt="${anime.title}" loading="lazy">
+          `;
+          filmesContainer.appendChild(card);
+        });
+
+        // Séries
+        const seriesContainer = document.getElementById("ultimas-series");
+        seriesContainer.innerHTML = '';
+        series.forEach((anime, index) => {
+          const card = document.createElement('div');
+          card.className = 'item-card fade-in';
+          card.style.animationDelay = `${index * 0.1}s`;
+          card.innerHTML = `
+            <img src="${anime.images.jpg.image_url}" alt="${anime.title}" loading="lazy">
+          `;
+          seriesContainer.appendChild(card);
+        });
+
+        // Episódios
+        const episodesContainer = document.getElementById("episodes-grid");
+        episodesContainer.innerHTML = '';
+        episodes.forEach((anime, index) => {
+          const episodeNumber = index + 1;
+          const duration = `${Math.floor(Math.random() * 15) + 20} min`;
+          
+          const card = document.createElement('div');
+          card.className = 'episode-card fade-in';
+          card.style.animationDelay = `${index * 0.15}s`;
+          card.innerHTML = `
+            <div class="episode-thumbnail" style="background-image: url(${anime.images.jpg.large_image_url})">
+              <div class="play-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="episode-info">
+              <div class="episode-title">${anime.title}</div>
+              <div class="episode-subtitle">Episódio ${episodeNumber}</div>
+              <div class="episode-meta">
+                <span>Há ${Math.floor(Math.random() * 7) + 1} dias</span>
+                <span class="episode-duration">${duration}</span>
+              </div>
+            </div>
+          `;
+          episodesContainer.appendChild(card);
+        });
+
+        console.log('Conteúdo carregado com sucesso!');
+
+      } catch (error) {
+        console.error("Erro ao carregar conteúdo:", error);
+        
+        // Fallback content com tema azul
+        const destaqueEl = document.getElementById("destaque");
+        destaqueEl.style.background = 'linear-gradient(135deg, #1e293b, #0f172a)';
+        destaqueEl.innerHTML = `
+          <div class="destaque-content fade-in">
+            <div class="destaque-info">
+              <div class="greeting">Olá <b>Usuário</b></div>
+              <p class="subtitle">Bem-vindo ao FDS Brasil</p>
+              <h2>Streaming de Alta Qualidade</h2>
+              <p>Sua plataforma favorita para assistir os melhores animes, filmes e séries com qualidade superior.</p>
+              <div class="destaque-buttons">
+                <button><i class="fas fa-play"></i> Explorar</button>
+                <button><i class="fas fa-heart"></i> Favoritos</button>
+              </div>
+            </div>
+          </div>
+        `;
+
+        // Fallback para listas
+        const createFallbackCards = (container, count) => {
+          container.innerHTML = '';
+          for (let i = 0; i < count; i++) {
+            const card = document.createElement('div');
+            card.className = 'item-card fade-in';
+            card.style.animationDelay = `${i * 0.1}s`;
+            card.innerHTML = `
+              <div style="width: 100%; height: 180px; background: linear-gradient(135deg, var(--card-bg), var(--card-hover)); display: flex; align-items: center; justify-content: center; color: var(--muted-text); font-size: 0.8em;">
+                <i class="fas fa-film" style="font-size: 2em;"></i>
+              </div>
+            `;
+            container.appendChild(card);
+          }
+        };
+
+        createFallbackCards(document.getElementById("ultimos-filmes"), 7);
+        createFallbackCards(document.getElementById("ultimas-series"), 7);
+
+        // Fallback para episódios
+        const episodesContainer = document.getElementById("episodes-grid");
+        episodesContainer.innerHTML = '';
+        for (let i = 0; i < 6; i++) {
+          const card = document.createElement('div');
+          card.className = 'episode-card fade-in';
+          card.style.animationDelay = `${i * 0.15}s`;
+          card.innerHTML = `
+            <div class="episode-thumbnail" style="background: linear-gradient(135deg, var(--card-bg), var(--card-hover)); display: flex; align-items: center; justify-content: center;">
+              <div class="play-overlay" style="opacity: 0.7;">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="episode-info">
+              <div class="episode-title">Episódio ${i + 1}</div>
+              <div class="episode-subtitle">Conteúdo em breve</div>
+              <div class="episode-meta">
+                <span>Em breve</span>
+                <span class="episode-duration">-- min</span>
+              </div>
+            </div>
+          `;
+          episodesContainer.appendChild(card);
+        }
+      }
+    }
+
+    // Event listeners
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('DOM carregado, iniciando aplicação...');
+      carregarConteudo();
+    });
+
+    // Scroll suave para as seções
+    document.querySelectorAll('.scroll-row').forEach(row => {
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      row.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - row.offsetLeft;
+        scrollLeft = row.scrollLeft;
+      });
+
+      row.addEventListener('mouseleave', () => {
+        isDown = false;
+      });
+
+      row.addEventListener('mouseup', () => {
+        isDown = false;
+      });
+
+      row.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - row.offsetLeft;
+        const walk = (x - startX) * 2;
+        row.scrollLeft = scrollLeft - walk;
+      });
+    });
+
+    // Adicionar efeito de clique nos cards
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('.item-card') || e.target.closest('.episode-card')) {
+        console.log('Card clicado!');
+        // Aqui você pode adicionar navegação para a página do conteúdo
+      }
+    });
+
+    // Funcionalidade de busca
+    const searchInput = document.querySelector('.search-box input');
+    if (searchInput) {
+      searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          const query = e.target.value.trim();
+          if (query) {
+            console.log('Buscando por:', query);
+            // Implementar busca aqui
+          }
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
