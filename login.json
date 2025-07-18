@@ -1,0 +1,10 @@
+{
+  "admin": {
+    "usuario": "admin",
+    "senha": "123456",
+    "email": "admin@unlockhub.com",
+    "nome": "Administrador UnlockHub",
+    "foto": "https://i.imgur.com/foto-admin.png",
+    "nivel": "super"
+  }
+}
